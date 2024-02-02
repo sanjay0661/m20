@@ -20,18 +20,18 @@ jobs:
 
       - name: Build and push Docker Image 1
         run: |
-          docker build . -f Dockerfile -t yourusername/image1:latest --build-arg CONFIG=configuration1
-          docker push yourusername/image1:latest
+          docker build . -f Dockerfile -t sanjayraj/image1:latest --build-arg CONFIG=configuration1
+          docker push sanjayraj/image1:latest
 
       - name: Build and push Docker Image 2
         run: |
-          docker build . -f Dockerfile -t yourusername/image2:latest --build-arg CONFIG=configuration2
-          docker push yourusername/image2:latest
+          docker build . -f Dockerfile -t sanjayraj/image2:latest --build-arg CONFIG=configuration2
+          docker push sanjayraj/image2:latest
 
       - name: Build and push Docker Image 3
         run: |
-          docker build . -f Dockerfile -t yourusername/image3:latest --build-arg CONFIG=configuration3
-          docker push yourusername/image3:latest
+          docker build . -f Dockerfile -t sanjayraj/image3:latest --build-arg CONFIG=configuration3
+          docker push sanjayraj/image3:latest
 
       # Add this new step to delete the first Docker image
       - name: Delete the First Docker Image
